@@ -24,7 +24,7 @@ jobs:
         run: |
           mkdir project
           unzip -o verity-fabric-starter.zip -d project
-          find project -name gradlew -type f -exec chmod +x {} \\\;
+          find project -type f -name gradlew -exec chmod +x {} +
 
       - name: Build with Gradle
         working-directory: project/verity-fabric-starter
